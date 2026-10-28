@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco | Gelo Polar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="topo">
+    <div class="logo">❄ GELO POLAR</div>
+    <a href="#vagas" class="link-vagas">Oportunidades</a>
+</header>
+
+<section class="banner">
+    <div class="banner-conteudo">
+        <span class="etiqueta">FAÇA PARTE DA NOSSA EQUIPE</span>
+        <h1>Seu futuro pode ser mais <span>gelado.</span></h1>
+        <p>
+            Estamos em busca de pessoas comprometidas e com vontade
+            de crescer. Venha fazer parte da equipe Gelo Polar!
+        </p>
+        <a href="#cadastro" class="botao">Quero me candidatar</a>
+    </div>
+</section>
+
+<section class="sobre" id="vagas">
+    <h2>Construa sua carreira com a gente</h2>
+    <p>
+        Somos uma empresa do ramo de fabricação e distribuição de gelo.
+        Valorizamos o trabalho em equipe, a responsabilidade e a dedicação.
+        Se você procura uma oportunidade profissional, queremos conhecer você!
+    </p>
+
+    <div class="beneficios">
+        <div class="beneficio">
+            <span>🤝</span>
+            <h3>Trabalho em equipe</h3>
+            <p>Um ambiente de colaboração e respeito.</p>
+        </div>
+
+        <div class="beneficio">
+            <span>📈</span>
+            <h3>Crescimento</h3>
+            <p>Oportunidades para desenvolver suas habilidades.</p>
+        </div>
+
+        <div class="beneficio">
+            <span>🧊</span>
+            <h3>Novos desafios</h3>
+            <p>Faça parte de uma operação que não para.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cadastro" id="cadastro">
+    <div class="cadastro-intro">
+        <span class="etiqueta">RECRUTAMENTO</span>
+        <h2>Cadastre seu currículo</h2>
+        <p>
+            Preencha seus dados para participar do nosso processo seletivo.
+        </p>
+    </div>
+
+    <form id="formulario">
+
+        <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                autocomplete="name"
+                required
+            >
+        </div>
+
+        <div class="campo">
+            <label for="cpf">CPF</label>
+            <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                inputmode="numeric"
+                required
+            >
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                autocomplete="email"
+                required
+            >
+        </div>
+
+        <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+                inputmode="numeric"
+                autocomplete="tel"
+                required
+            >
+        </div>
+
+        <div class="campo">
+            <label for="vaga">Área de interesse</label>
+            <select id="vaga" name="vaga" required>
+                <option value="">Selecione uma área</option>
+                <option value="Producao">Produção de gelo</option>
+                <option value="Expedicao">Expedição e estoque</option>
+                <option value="Motorista">Motorista entregador</option>
+                <option value="Auxiliar">Auxiliar de entrega</option>
+                <option value="Administrativo">Administrativo</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="curriculo">Link do currículo</label>
+            <input
+                type="url"
+                id="curriculo"
+                name="curriculo"
+                placeholder="https://..."
+                required
+            >
+            <small class="ajuda">
+                Cole o link do seu currículo no Google Drive ou em outra plataforma.
+            </small>
+        </div>
+
+        <button type="submit" id="btnEnviar">Enviar candidatura</button>
+
+        <p id="aviso" role="status" aria-live="polite"></p>
+
+        <p class="privacidade">
+            Seus dados serão utilizados para fins de recrutamento e seleção.
+        </p>
+
+    </form>
+</section>
+
+<footer>
+    <div class="logo">❄ GELO POLAR</div>
+    <p>Talentos que fazem a diferença, em qualquer temperatura.</p>
+    <small>© 2026 Gelo Polar. Todos os direitos reservados.</small>
+</footer>
+
+</body>
+</html>
